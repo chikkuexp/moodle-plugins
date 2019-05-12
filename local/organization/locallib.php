@@ -31,7 +31,7 @@ class local_organization {
             // $count++;
             $orgObj->id             = $organization->id;
             $orgObj->name           = $organization->name;
-            $orgObj->description    = $organization->description;
+            $orgObj->phone          = $organization->phone;
             $orgObj->email          = $organization->email; //$DB->count_records('cohort_members', array('cohortid'=>$c->id));
             $orgList[]              = $orgObj;
         }

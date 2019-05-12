@@ -28,10 +28,7 @@ if (isguestuser()) {
 	die;
 }
 else {
-
-        $locallib = new local_organization();
         $results     = new stdClass();
-        $results->organizations = $locallib->get_organization_list();
         $results->siteUrl = $CFG->wwwroot;
         $results->returnurl = $baseurl->out_as_local_url();   
         $output = $PAGE->get_renderer('local_organization');        

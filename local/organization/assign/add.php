@@ -7,14 +7,27 @@ require_once("$CFG->dirroot/cohort/lib.php");
 
 // $cohort_id      =   required_param('cohort',  PARAM_INT);  //user_course_id
 $name           =   required_param('name', PARAM_TEXT);
-$description    =   required_param('description', PARAM_TEXT);
 $email          =   required_param('email', PARAM_EMAIL);
+$phone          =   optional_param('phone', array(), PARAM_TEXT);
+$city           =   optional_param('city', array(), PARAM_TEXT);
+$street         =   optional_param('street', array(), PARAM_TEXT);
+$country        =   optional_param('country', array(), PARAM_TEXT);
+$state          =   optional_param('state', array(), PARAM_TEXT);
+$zip            =   optional_param('zip', array(), PARAM_TEXT);
+$state          =   optional_param('state', array(), PARAM_TEXT);
+
 $returnurl      =   new moodle_url('/local/organization/index.php');
 
 $data = array ( 
-    "name" => $name,
-    "description" => $description,
-    "email" => $email
+    "name"      => $name,
+    "email"     => $email,
+    "phone"     => $phone,
+    "city"      => $city,
+    "street"    => $street,
+    "country"   => $country,
+    "state"     => $state,
+    "zip"       => $zip,
+    "state"     => $state
 );
 
 /*$file           = $_FILES["file_cohort"];
