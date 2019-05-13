@@ -11,12 +11,11 @@ $string['pluginname'] = 'Mentegram Settings';
 
 $string['mentegramclientid'] = 'Client Id';
 $string['mentegramclientid_desc'] = 'Client id of Mentegram';
-
-$string['studentcertificate_content'] = 'Content for student certificate';
-$string['studentcertificate_content_desc'] = 'Content for student certificate';
-$string['studentcertificate_generation'] = 'Certificate Generation';
-$string['certificateconfirmationstudent_content'] = 'Certificate confirmation mail for student';
-$string['certificateconfirmationstudent_content_desc'] = 'Content of certificate confirmation mail for student';
-$string['certificateconfirmationmentor_content'] = 'Certificate confirmation mail for mentor';
-$string['certificateconfirmationmentor_content_desc'] = 'Content of certificate confirmation mail for mentor';
-$string['certificat_view'] = 'View Certificate';
+$string['mentegramclientsecret'] = 'Client Secret';
+$string['mentegramclientsecret_desc'] = 'Client secret of Mentegram';
+$string['mentegramtherapistusername'] = 'Therapist Username';
+$string['mentegramtherapistusername_desc'] = 'Username of the therapist';
+$string['mentegramtherapistpassword'] = 'Therapist Password';
+$string['mentegramtherapistpassword_desc'] = 'Password of the therapist';
+$string['mentegramorganizationid'] = 'Mentegram Organization Id';
+$string['mentegramorganizationid_desc'] = 'Organization id of Mentegram organization';

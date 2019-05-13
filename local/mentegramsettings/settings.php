@@ -35,35 +35,34 @@ if ($hassiteconfig) {
 
     $settings = new admin_settingpage('local_mentegramsettings', get_string('pluginname', 'local_mentegramsettings'));
     $ADMIN->add('localplugins', $settings);
-    
-   
-    $name = 'local_mentegramsettings/studentcertificate_content';
-    $title = get_string('studentcertificate_content', 'local_mentegramsettings');
-    $description = get_string('studentcertificate_content_desc', 'local_mentegramsettings');
-    $setting = new admin_setting_confightmleditor($name, $title, $description, '');
-    $settings->add($setting); 
-
-    $name = 'local_mentegramsettings/certificateconfirmationstudent_content';
-    $title = get_string('certificateconfirmationstudent_content', 'local_mentegramsettings');
-    $description = get_string('certificateconfirmationstudent_content_desc', 'local_mentegramsettings');
-    $setting = new admin_setting_confightmleditor($name, $title, $description, '');
-    $settings->add($setting);
-
-    $name = 'local_mentegramsettings/certificateconfirmationmentor_content';
-    $title = get_string('certificateconfirmationmentor_content', 'local_mentegramsettings');
-    $description = get_string('certificateconfirmationmentor_content_desc', 'local_mentegramsettings');
-    $setting = new admin_setting_confightmleditor($name, $title, $description, '');
-    $settings->add($setting);
-
-    $name = 'local_mentegramsettings/certificateconfirmationmentor_content';
-    $title = get_string('certificateconfirmationmentor_content', 'local_mentegramsettings');
-    $description = get_string('certificateconfirmationmentor_content_desc', 'local_mentegramsettings');
-    $setting = new admin_setting_confightmleditor($name, $title, $description, '');
-    $settings->add($setting);
 
     $name = 'local_mentegramsettings/mentegramclientid';
     $title = get_string('mentegramclientid', 'local_mentegramsettings');
     $description = get_string('mentegramclientid_desc', 'local_mentegramsettings');
-    $setting = new admin_setting_confightmleditor($name, $title, $description, '');
+    $setting = new admin_setting_configtext($name, $title, $description, '');
     $settings->add($setting); 
+
+    $name = 'local_mentegramsettings/mentegramclientsecret';
+    $title = get_string('mentegramclientsecret', 'local_mentegramsettings');
+    $description = get_string('mentegramclientsecret_desc', 'local_mentegramsettings');
+    $setting = new admin_setting_configtext($name, $title, $description, '');
+    $settings->add($setting);
+
+    $name = 'local_mentegramsettings/mentegramtherapistusername';
+    $title = get_string('mentegramtherapistusername', 'local_mentegramsettings');
+    $description = get_string('mentegramtherapistusername_desc', 'local_mentegramsettings');
+    $setting = new admin_setting_configtext($name, $title, $description, '');
+    $settings->add($setting);
+
+    $name = 'local_mentegramsettings/mentegramtherapistpassword';
+    $title = get_string('mentegramtherapistpassword', 'local_mentegramsettings');
+    $description = get_string('mentegramtherapistpassword_desc', 'local_mentegramsettings');
+    $setting = new admin_setting_configtext($name, $title, $description, '');
+    $settings->add($setting);
+
+    $name = 'local_mentegramsettings/mentegramorganizationid';
+    $title = get_string('mentegramorganizationid', 'local_mentegramsettings');
+    $description = get_string('mentegramorganizationid_desc', 'local_mentegramsettings');
+    $setting = new admin_setting_configtext($name, $title, $description, '');
+    $settings->add($setting);
 }

@@ -9,8 +9,8 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version = 2018061801;
+$plugin->version = 2019051301;
 $plugin->requires = 2010112400;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->release = 1.0;
-$plugin->component = 'local_certificatetemplate';
+$plugin->component = 'local_mentegramsettings';
